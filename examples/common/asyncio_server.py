@@ -42,7 +42,7 @@ async def run_server():
     # request to 0x100 will respond with an invalid address exception. This is
     # because many devices exhibit this kind of behavior (but not all)::
     #
-    #     block = ModbusSequentialDataBlock(0x00, [0]*0xff)
+    block = ModbusSequentialDataBlock(0x00, [0]*0xff)
     #
     # Continuing, you can choose to use a sequential or a sparse DataBlock in
     # your data context.  The difference is that the sequential has no gaps in
